@@ -1,11 +1,15 @@
 public class StarTriangle {
-    private final String shape = "[*]";
+    private String shape = "[*]";
     private int width;
 
     public StarTriangle(int width){
         this.width = width;
     }
 
+    public StarTriangle(int width, String shape){
+        this(width);
+        this.shape = shape;
+    }
     @Override
     public String toString(){
         String triangle = "";

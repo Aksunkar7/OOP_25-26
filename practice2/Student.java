@@ -1,3 +1,5 @@
+package practice2;
+
 public class Student {
     private String name;
     private String id;
@@ -24,16 +26,23 @@ public class Student {
         return this.id;
     }
 
-    public int incYearOfStudy(){
-       return this.yearOfStudy++;
+    public void incYearOfStudy(){
+       this.yearOfStudy++;
+    }
+
+    public int getYearOfStudy(){
+        return this.yearOfStudy;
     }
     public static void main(String[] args){
         Student Aksungkar = new Student("Aks", 2024);
         Student Aks = new Student("Akssss", 2024);
         System.out.println(Aksungkar.getId());
         System.out.println(Aks.getId());
-        System.out.println(Aks.incYearOfStudy());
+        System.out.println(Aks.getYearOfStudy());
+        Aks.incYearOfStudy();
+        System.out.println(Aks.getYearOfStudy());
         System.out.println(Aksungkar.getName());
+        
         System.out.println(Aks.getId());
 
 

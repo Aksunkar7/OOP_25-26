@@ -1,0 +1,12 @@
+1) many interfaces can be implemented at time, while classes only one. Using classes we can create an object,
+instance but interface is just structure, there is no any instances, it's just rule for its children
+
+2) Yes, it can have. However, it keeps only public static final fields (constant) even if we write :
+    int MAX_LENGTH = 160; ----> public static final int MAX_LENGTH = 160;
+    In interfaces they are same, because java automatically assigns fields const
+
+3) Absolutely can, It's useful, because sometimes our classes shouldn't get necessary them fields methods
+using interfaces we can assign them only things that they need. For example, vehicle can be car and plane
+but their abilities are different. It may destroy our logic. Plane flyable, car not
+
+

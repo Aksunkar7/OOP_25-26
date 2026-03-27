@@ -11,11 +11,11 @@ public class Time {
         this.minute = m;
         this.second = s;    
         }
-        else {
-            this.hour = 0;
-            this.minute = 0;
-            this.second = 0;
-        }
+        // else {
+        //     this.hour = 0;   
+        //     this.minute = 0;
+        //     this.second = 0;
+        // }
     }
     
 
